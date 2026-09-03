@@ -1,0 +1,310 @@
+% !TEX encoding = UTF-8
+% !TEX program = pdflatex
+% !TEX spellcheck = pt_BR
+
+\documentclass[portuguese,a4paper,nologo]{europasscv}
+% https://br.mirrors.cicku.me/ctan/macros/latex/contrib/europasscv/europasscv.pdf
+
+\usepackage[portuguese]{babel}
+\usepackage[backend=biber,autolang=hyphen,sorting=none,style=numeric,maxbibnames=99,doi=false,isbn=false,maxcitenames=2]{biblatex}
+\usepackage{csquotes}
+\usepackage{europasscv-bibliography}
+
+% \usepackage{hyperref}
+% \hypersetup{
+%     colorlinks=true,       % false = boxed links; true = colored links
+%     linkcolor=cyan,        % color of internal links (sections, etc.)
+%     urlcolor=cyan,         % color of external website links
+%     % citecolor=green,       % color of citation links
+% }
+
+
+\ecvname{Elias De Nadai Nalesso Silva}
+% \ecvaddress{Rua Maria Eleonora Pereira, 1170. Jardim da Penha, Vitória, ES - Brasil}
+\ecvaddress{Jardim da Penha, Vitória, ES - Brasil}
+% \ecvtelephone{(+555) 555 555}
+% \ecvmobile{+55 27 99859-3556}
+% \ecvworkphone{(+555) 123 456}
+\ecvemail{pro.eliasdns@gmail.com}
+% \ecvhomepage{https://lattes.cnpq.br/4361304327656565/}
+% \ecvhomepage{https://portfolio.eliasdns.com/}
+% \ecvgitpage{https://gist.github.com/Eliasdns/}
+\ecvgithubpage{https://github.com/Eliasdns/}
+% \ecvgitlabpage{gitlab.com/}
+\ecvlinkedinpage{https://www.linkedin.com/in/eliasdns/}
+\ecvim{WhatsApp}{https://wa.me/5527998593556}
+
+\ecvgender{Masculino}
+\ecvdateofbirth{15/08/1999}
+% \ecvnationality{Brasileira}
+
+
+\ecvfootnote{}
+
+\begin{document}
+% \setlength{\emergencystretch}{3em}
+
+\begin{europasscv}
+  \ecvpersonalinfo
+
+
+  \ecvsection{EXPERIÊNCIA}
+
+
+    \ecvtitle{Fevereiro 2026 -- Maio 2025}{Globalsys | Vixpar (Grupo Águia Branca) · Smartsourcing}
+    \ecvitem{}{\textbf{Cargo:}
+      \quad Dev Python Jr. e Estágio Dev Python
+      \quad ·
+      \quad Atuando para o projeto \textit{\underline{\href{https://play.google.com/store/apps/details?id=vix.projetovapp}{V1}}}
+      (app de mobilidade urbana do Grupo Águia Branca)
+    }
+
+    \ecvitem{}{\begin{ecvitemize}
+      \setlength{\itemsep}{0.4em}
+      \setlength{\parsep}{0em}
+      % \setlength{\parskip}{0.2em}
+
+      \item Desenvolvi e evoluí um \textbf{dashboard de BI}
+        e monitoramento de KPIs em \textbf{tempo real}
+        para o app \textit{\underline{\href{https://play.google.com/store/apps/details?id=vix.projetovapp}{V1}}}
+        % (app de mobilidade urbana do Grupo Águia Branca),
+        integrando processamento, análise e visualização interativa de dados com boas práticas de desenvolvimento e implantação de aplicações modernas.
+
+      \item Também fiz diversas análises de dados pontuais,
+        além da participação na construção de relatórios executivos
+        e em reuniões para comunicação com stakeholders e pessoas do negócio,
+        incluindo \textbf{insights acionáveis}, construção de \textbf{storytelling} e retórica.
+
+      \item Construção conjunta de \textbf{relatórios} em PDF (encadernáveis) com LaTex
+        e \textbf{storytelling} com slides (MS 365 PowerPoint colaborativo no SharePoint).
+
+      \item Realizei \textbf{Análise Exploratória} de Dados (EDA),
+        \textbf{análise estatística},
+        modelagem de \textbf{séries temporais}, \textbf{análise preditiva}
+        e processamento e análise de dados \textbf{geolocalizados};
+        identificação de tendências, sazonalidades, padrões e anomalias
+        e por fim, geração de \textbf{insights acionáveis} para o negócio.
+        Utilizando SQL, Pandas, GeoPandas, \textit{\underline{\href{https://h3geo.org/}{H3}}}, NumPy, Statsmodels, Seaborn, Plotly e PyDeck.
+
+      \item Desenvolvi diversas \textbf{visualizações interativas} dos dados, mapas de calor e mapas tridimensionais para o dashboard,
+        usando Plotly, PyDeck e \textit{\underline{\href{https://h3geo.org/}{H3}}},
+        além de visualizações tabelares interativas utilizando o \textit{\underline{\href{https://www.ag-grid.com/}{AG Grid}}}.
+
+      \item Desenvolvi consultas, agregações e transformações de dados em \textbf{SQL} / \textbf{T-SQL}
+        (ocasionalmente com queries acima de 100 linhas) sobre banco de dados MS \textbf{SQL Server}
+        (banco com magnitude de centenas de tabelas e certas tabelas com milhões de registros e mais de uma centena de colunas),
+        utilizando SQLAlchemy para as conexões e a respectiva autenticação via Microsoft Entra ID.
+
+      \item Front-end com Streamlit.
+
+      \item Implementei múltiplas camadas de \textbf{cache},
+        com \textbf{Redis} e na própria app com \textit{LRU-Cache} e \textit{Singleton};
+
+      \item Estruturei \textbf{testes automatizados} com \textbf{Pytest},
+        contribuindo para a manutenibilidade e confiabilidade do dashboard.
+
+      \item Implementei a \textbf{observabilidade} da aplicação com OTel (\textbf{OpenTelemetry})
+        no lado do código (inclusive criando utilitários e métrica própria
+        seguindo as convenções semânticas e de nomenclatura do OTel e do OpenMetrics/Prometheus)
+        e integração com o \textbf{Azure Monitor} (Application Insights),
+        além da implantação e uso de uma stack completa de observabilidade localmente (ambiente de dev.)
+        (via Docker Compose) usando \textbf{Prometheus}, \textbf{Grafana}, Loki, Tempo e Alloy (a distro de OTel Collector da Grafana Labs).
+
+      \item Contribuí para a integração com o pipeline de \textbf{CI/CD} no \textbf{Azure DevOps} e com o cluster k8s,
+        debugando e corrigindo problemas do lado do container da app.
+
+      \item Sendo provavelmente as minhas maiores contribuições ao projeto do dashboard:
+        A definição da maior parte das dependências e dos padrões organizacionais e arquiteturais
+        e a escrita e manutenção dos principais arquivos de configuração e implantação.
+        % como \texttt{pyproject.toml}, \texttt{Dockerfile}, \texttt{docker-compose.yaml}, etc.
+
+      \item Trabalhei também na \textbf{automação} (\textbf{RPA}) para aquisição de dados climáticos,
+        usando a API do Open-Meteo, e na ingestão desses dados no \textbf{Databricks}.
+        % usando a SQL Statement API.
+
+    \end{ecvitemize}}
+
+
+    \ecvtitle{Fevereiro 2025 -- Setembro 2023}{Top Serviços Digitais · Autônomo}
+    \ecvitem{}{\textbf{Cargo:}\quad Python Fullstack Developer}
+
+    \ecvitem{}{\begin{ecvitemize}
+      \setlength{\itemsep}{0.3em}
+
+      \item Trabalhei sob a metodologia \textbf{Scrum} e criei um sistema web de ponta-a-ponta com \textbf{Django},
+        \textbf{Bootstrap}, Vanilla \textbf{JavaScript} e infra na GCP (\textbf{Google Cloud Platform}),
+        que faz o controle de clientes, usuários, contratos, cobranças e pagamentos.
+        Usando \textbf{UML} p/ modelagem das entidade, do banco relacional e dos casos de uso,
+        prototipação da UI com \textbf{Figma}, \textbf{Pytest} p/ testes unitários, Mypy p/ tipagem estática, etc.
+
+      \item Também auxiliei em um projeto de aplicativo mobile com \textbf{React Native}
+        e back-end em \textbf{Express.js} criando sobretudo soluções em DevOps e infraestrutura.
+
+      % {\ecvhighlight{Tecnologias}: }
+    \end{ecvitemize}}
+
+
+    \ecvtitle{Setembro 2023 -- Janeiro 2017}{Ilha Informática · Freelancer}
+    \ecvitem{}{\textbf{Cargo:}\quad Analista de TI e Técnico em manutenção de hardware}
+
+    \ecvitem{}{\begin{ecvitemize}
+      \setlength{\itemsep}{0.3em}
+
+      \item Criei um site de ponta-a-ponta utilizando \textbf{Django},
+        \textbf{Bootstrap} e \textbf{jQuery} que automatiza parte dos processos da empresa,
+        faz parsing do texto exportado pelo software de detecção de hardware em uso (CPU-Z) com \textbf{RegEx}
+        e integra essa solução com o sistema web de gestão (ERP) via API REST.
+
+      \item No provisionamento de um cluster de servidores \textbf{CentOS} 7 voltado a HPC, e a sua infraestrutura.
+
+      \item Na implantação e administração de \textbf{firewall} \textbf{pfSense}.
+
+      \item Na administração de servidores \textbf{Windows Server} 2016 e \textbf{Active Directory}.
+
+      \item Em diversas soluções de \textbf{virtualização}, à exemplo, Physical to virtual (P2V) com VirtualBox.
+
+      \item Na implantação e manutenção de soluções de \textbf{CFTV} Hikvision e Intelbras.
+
+      \item Em \textbf{Help desk} Level 1 e 2.
+
+      \item Na manutenção de um site que utiliza \textbf{PHP}, \textbf{MySQL} e \textbf{Vanilla JavaScript}.
+
+      \item Na \textbf{manutenção} de diversos desktops, servidores, macs, notebooks e eventualmente de smarphones e tablets,
+        na solução de diversos tipos de problemas de hardware e de software,
+        na implantação dos SOs e softwares necessários,
+        e na \textbf{automação} de diversos desses processos, passando à exemplo,
+        pela personalização de detalhes da interface do Win10, via scripts \textbf{Batch},
+        de Registro do Windows (.reg)
+        e \textbf{PowerShell}.
+
+      % {\ecvhighlight{Tecnologias}: }
+    \end{ecvitemize}}
+
+
+  \ecvsection{HABILIDADES}
+
+    \ecvblueitem{Soft-skills}{
+      \textbf{Autodidatismo}, Aprendizado rápido,
+      Inteligência emocional, Inventividade, Pensamento analítico,
+      Alto nível de organização e Comunicativo.
+    }
+
+    \ecvblueitem{Desenvolvimento Web, Infraestrutura em Núvem \& DevOps}{
+      Sólida experiência na criação de soluções Web de ponta-a-ponta (principalmente com \textbf{Django});
+      Na criação de pipelines de \textbf{CI/CD} (com \textbf{GitHub Actions});
+      Na garantia de saúde e manutenibilidade do código
+        com \textbf{testes automáticos} (Pytest, nox e Coverage.py),
+        linting (Ruff) e
+        análise estática do código com Mypy (checagem de tipos) e Bandit (checagem de segurança);
+      No desenho de soluções e arquitetura usando, por exemplo, \textbf{UML}, Figma e Excalidraw;
+      E na implementação de \textbf{observabilidade} com \textbf{OpenTelemetry}, \textbf{LGTM Stack} e Azure Application Insights.
+    }
+    \ecvitem{}{\ecvhighlight{Tecnologias:}
+      Python 3 (Avançado);
+      Django framework (Avançado) e FastAPI (Intermediário);
+      CSS3 (Intermediário), Bootstrap (Intermediário) e jQuery (Intermediário);
+      JavaScript (Avançado), TypeScript (Básico) e Node.js (Básico);
+      Elixir (Básico) e Phoenix framework (Básico).
+
+      Git (Avançado);
+      Docker (Avançado), Docker Compose (Avançado) e Docker Swarm (Básico);
+      AWS (Básico), GCP (Básico) e Oracle Cloud Infrastructure (Básico);
+      GitHub Actions (Avançado);
+      OpenTelemetry (Avançado), Grafana (Intermediário), Prometheus (Intermediário) e Azure Monitor (Básico).
+    }
+
+    \ecvblueitem{Infraestrutura Local, Manutenção de computadores \& Redes}{
+      Sólida experiência em \textbf{manutenção de computadores} (sobretudo Desktops e Notebooks),
+      em instalações de infraestrutura de TI,
+      na \textbf{administração de servidores} (Sobretudo Ubuntu, CentOS e Windows Server)
+      e na administração de \textbf{firewall}s (pfSense);
+    }
+    \ecvitem{}{\ecvhighlight{Tecnologias:}
+      Linux (Avançado) e Servidores Ubuntu e CentOS (Avançado);
+      Windows (Avançado) e Windows Server (Básico);
+      Firewall pfSense (Intermediário);
+      Instalações de CFTV (Básico);
+      Montagem e Manutenção de Computadores (Avançado).
+    }
+
+    \ecvblueitem{Automação}{
+      Sólido domínio dos sistemas Linux e Windows; Sólida experiência na criação de \textbf{scripts} p/ automação;
+      Forte domínio de \textbf{Python} e suas bibliotecas;
+      Sólida experiência em processamento de texto com \textbf{RegEx} (incluindo Shell Parameter Expansion e tools como sed e grep).
+      Conhecimento para criação e consumo de \textbf{APIs},
+        para \textbf{automação de browsers}
+        e em \textbf{OCR} (Reconhecimento Óptico de Caracteres).
+    }
+    \ecvitem{}{\ecvhighlight{Tecnologias:}
+      Shell script (Avançado), Batch script (Avançado) e Powershell (Intermediário);
+      Selenium (Básico) e Playwright (Intermediário);
+      OCR (Reconhecimento Óptico de Caracteres) com Tesseract (Intermediário) e Google Cloud Vision API (Intermediário);
+    }
+
+    \ecvblueitem{Análise de Dados}{
+      Sólida experiência no desenvolvimento e implantação de \textbf{dashboards interativos},
+      em \textbf{Data Visualization},
+      na construção de \textbf{Relatórios},
+      na criação de \textbf{Storytelling},
+      na \textbf{comunicação} com stakeholders técnicos e de negócio (e apresentação de resultados),
+      em \textbf{Análise Exploratória} de Dados (EDA),
+      \textbf{Análise Estatística},
+      Modelagem de \textbf{Séries Temporais}, \textbf{Análise Preditiva}
+      e processamento e análise de dados \textbf{Geolocalizados},
+      identificação de tendências, sazonalidades, padrões e anomalias
+      e por fim, na geração de \textbf{insights acionáveis} para o negócio.
+    }
+    \ecvitem{}{\ecvhighlight{Tecnologias:}
+      SQL / MS SQL Server (Intermediário) e MongoDB (Intermediário);
+      Redis (Intermediário) e Elasticsearch (Básico);
+      Pandas (Avançado) e Geoprocessamento c/ GeoPandas (Intermediário);
+      Power BI (Básico);
+      Interactive data visualization c/ Plotly (Intermediário) e PyDeck (Intermediário);
+      Front-end com Streamlit.
+    }
+
+    \ecvblueitem{Outras}{
+      Prototipação e Desenvolvimento de soluções \textbf{eletrônicas} e de \textbf{IoT} com Arduino;
+      \textbf{Pentest} e \textbf{hacking} de vulnerabilidades comuns, como SQL Inject, XSS, CSRF, SSRF, etc
+      e uso de ferramentas como NMap, Wireshark, tcpdump, Metasploit Framework, SQLMap, Burp Suite, etc;
+      Criação de planilhas (\textbf{Excel}) envolvendo gráficos e entre outros elementos mais avançados.
+    }
+    \ecvitem{}{\ecvhighlight{Tecnologias:}
+      C (Básico);
+      Arduino (Básico);
+      MS Excel (Intermediário);
+      Ferramentas para Pentest e Cibersegurança (Intermediário).
+    }
+
+
+  \ecvsection{EDUCAÇÃO}
+    \ecvtitle{2024 -- Presente}{Bacharel em Ciência da Computação -- FAESA}
+    % \ecvitem{}{\textbf{TCC:} }
+    \ecvitem{}{\ecvhighlight{Destaques:}
+      2 participações no \href{https://hackfaesa.com.br/}{\textit{\underline{Hack FAESA}}} (maior hackathon universitário do estado),
+      % TODO: link "oficial" acerca do projeto GEMA
+      participação no projeto de extensão GEMA,
+      membro da diretoria da atlética de e-Sports (e co-capitão do time de CS2)
+      e coeficiente de rendimento (CR) de 9,52 ao longo do primeiro ano do curso.
+    }
+
+    \ecvtitle{2015 -- 2017}{Ensino Médio -- IFES Campus Vitória}
+    \ecvitem{}{Ensino médio Integrado ao Técnico em Eletrotécnica (Incompleto)}
+    \ecvitem{}{\ecvhighlight{Destaques:}
+      Participação em diversas olimpíadas científicas nacionais, como OBMEP (matemática), OBA (astronomia) e OBI (informática);
+      Participação como ouvinte das aulas de Cálculo I da turma de Bacharel em Engenharia do IFES no turno vespertino;
+      Co-criação e parte de um grupo de estudos em informática.
+    }
+
+  \ecvsection{IDIOMAS}
+    % Quadro Europeu Comum de Referência para Línguas (QECR) (CEFR em inglês)
+    \ecvmothertongue{Português}
+    \ecvlanguageheader
+    \ecvlanguage{Inglês}{A2}{B2}{A1}{A1}{A2}
+    % \ecvlanguagecertificate{TOEFL -- Score: 89}
+    \ecvlastlanguage{Espanhol}{B1}{B1}{A2}{A2}{A1}
+    \ecvlanguagefooter
+
+
+\end{europasscv}
+\end{document}
